@@ -66,15 +66,51 @@ main {
 
 .banner-img {
   min-width: 300px;
-  max-width: 600px;
+  max-width: 650px;
 }
 
-footer {
+.banner-img-container{
+  position: relative;
+}
+
+.card{
+  background: #181719;
   position: absolute;
-  bottom: 0px;
-  width: 100vw;
+  bottom: -100px;
+  right: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.profile-img{
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.profile-name{
+  font-family: Montserrat;
+  font-weight: 400;
+  margin: 0px;
+}
+.profile-position{
+  font-family: Montserrat;
+  color: var(--Gray-3, #828282);
+  font-size: 18px;
+  margin: 4px 0px;
+}
+
+.profile-details{
+  display: flex;
+  align-items: center;
+}
+
+
+footer{
+  position: absolute;
+  bottom: -70px;
+  width: 90vw;
   text-align: center;
-  padding: 10px 0px
+  padding: 10px 0px;
 }
 
 @media screen and (max-width: 900px) {
@@ -109,9 +145,10 @@ footer {
     display: block;
     background-color: #181719;
     width: 88vw;
-    height: 90vh;
+    height: 96vh;
     padding-top: 20px;
     transition: all ease-in-out 0.5s;
+    z-index: 9;
   }
 
   main {
