@@ -1,0 +1,125 @@
+body {
+  background: #181719;
+  color: white;
+  max-width: 1440px;
+  margin: 0px auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav-logo {
+  font-family: 'Crimson Pro';
+  border: 1px solid white;
+  display: inline;
+}
+
+.responsive-menu-icon {
+  display: none;
+}
+
+.responsive-close-menu-icon {
+  display: none;
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  font-family: Montserrat;
+  list-style: none;
+  padding: 5px;
+  border-bottom: 1px solid #181719;
+  cursor: pointer;
+}
+
+.link:hover {
+  border-bottom: 1px solid white;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.banner-title {
+  font-family: Lora;
+}
+
+.banner-desc {
+  font-family: Montserrat;
+  max-width: 500px;
+}
+
+.readmore-btn {
+  font-family: Montserrat;
+  cursor: pointer;
+}
+
+.banner-img {
+  min-width: 300px;
+  max-width: 600px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100vw;
+  text-align: center;
+  padding: 10px 0px
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    flex-direction: column;
+  }
+
+  .banner-img {
+    min-width: 300px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .responsive-menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .responsive-close-menu-icon {
+    display: block;
+    float: right;
+    cursor: pointer;
+    font-size: 25px;
+    margin-right: 20px;
+  }
+
+  .link-container {
+    position: absolute;
+    top: 0px;
+    left: -500px;
+    display: block;
+    background-color: #181719;
+    width: 88vw;
+    height: 90vh;
+    padding-top: 20px;
+    transition: all ease-in-out 0.5s;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .banner-img {
+    min-width: 300px;
+    width: 100%;
+  }
+}
